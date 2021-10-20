@@ -1,0 +1,11 @@
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\bin\Debug\ProyectoESDGrupo4.exe.config
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\bin\Debug\ProyectoESDGrupo4.exe
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\bin\Debug\ProyectoESDGrupo4.pdb
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.csprojAssemblyReference.cache
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmSolicitud.resources
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.frmPrincipal.resources
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Properties.Resources.resources
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.csproj.GenerateResource.cache
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.csproj.CoreCompileInputs.cache
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.exe
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.pdb
