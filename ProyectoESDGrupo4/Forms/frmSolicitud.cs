@@ -99,6 +99,25 @@ namespace ProyectoESDGrupo4.Forms
             }
             //Agregar a la lista de solicitudes
             listaSolicitudes.insertar(1, solicitud);
+            MessageBox.Show("Solicitud agregada");
+            limpiar();
+        }
+        private void limpiar()
+        {
+            cbxPersonaTramite.SelectedIndex = -1;
+            cbxTipoTramite.SelectedIndex = -1;
+            cbxTipoSolicitante.SelectedIndex = -1;
+            cbxTipoDocSolicitante.SelectedIndex = -1;
+            cbxTipoDocApoderado.SelectedIndex = -1;
+            txtNumDocSolicitante.Text = "";
+            txtNumDocApoderado.Text = "";
+            txtNomSolicitante.Text = "";
+            txtNombreApoderado.Text = "";
+            txtEdadSolicitante.Text = "";
+            txtEdadApoderado.Text = "";
+            txtDireccionSolicitante.Text = "";
+            txtDireccionApoderado.Text = "";
+            gbxApoderado.Visible = false;
         }
     }
 }
