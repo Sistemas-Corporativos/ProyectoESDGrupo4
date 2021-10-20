@@ -88,6 +88,7 @@ namespace ProyectoESDGrupo4.Forms
             }
             //Creamos la solicitud
             Solicitud solicitud = new Solicitud();
+            solicitud.fecha = DateTime.Now;
             solicitud.personaTramite = personaTramite;
             solicitud.tipoTramite = tipoTramite;
             solicitud.tipoNacionalidad = tipoNacionalidad;

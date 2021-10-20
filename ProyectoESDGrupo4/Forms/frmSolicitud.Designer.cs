@@ -380,12 +380,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 643);
+            this.ClientSize = new System.Drawing.Size(800, 589);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.gbxApoderado);
             this.Controls.Add(this.gbxSolicitante);
             this.Controls.Add(this.gbxInfo);
+            this.MaximizeBox = false;
             this.Name = "frmSolicitud";
             this.Text = "Solicitud";
             this.gbxInfo.ResumeLayout(false);

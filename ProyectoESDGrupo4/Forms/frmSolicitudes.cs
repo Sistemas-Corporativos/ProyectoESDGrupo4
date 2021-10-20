@@ -22,7 +22,27 @@ namespace ProyectoESDGrupo4.Forms
 
         private void frrmSolicitudes_Load(object sender, EventArgs e)
         {
+            rellenar();
+        }
+        private void rellenar()
+        {
             dgvSolicitudes.DataSource = listaSolicitudes.convertirATablaDatos();
+        }
+        private void eliminarSolicitudSeleccionadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dgvSolicitudes.Rows.Count > 0)
+            {
+                if(MessageBox.Show("Desea eliminar esta solicitud","Solicitud", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    listaSolicitudes.borrar(dgvSolicitudes.CurrentRow.Index + 1);
+                    rellenar();
+                }
+            }
+        }
+
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rellenar();
         }
     }
 }

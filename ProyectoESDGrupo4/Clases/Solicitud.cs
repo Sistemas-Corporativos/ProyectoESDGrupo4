@@ -10,6 +10,7 @@ namespace ProyectoESDGrupo4.Clases
     public class Solicitud
     {
         //Atributos
+        public DateTime fecha;
         public PersonaTramite personaTramite;
         public TipoTramite tipoTramite;
         public TipoNacionalidad tipoNacionalidad;

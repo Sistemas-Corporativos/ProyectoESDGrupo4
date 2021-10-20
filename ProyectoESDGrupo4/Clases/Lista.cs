@@ -179,7 +179,7 @@ namespace ProyectoESDGrupo4.Clases
         public DataTable convertirATablaDatos()
         {
             DataTable tabla = new DataTable();
-            string[] encabezados = new string[] { "Persona Tramite","Tipo Tramite", "Tipo Nacionalidad", "Tipo Documento",
+            string[] encabezados = new string[] { "Fecha","Persona Tramite","Tipo Tramite", "Tipo Nacionalidad", "Tipo Documento",
                                 "No Documento", "Nombre", "Edad" };
             foreach(string encabezado in encabezados)
             {
@@ -190,7 +190,7 @@ namespace ProyectoESDGrupo4.Clases
             while (reco != null)
             {
                 DataRow fila = tabla.NewRow();
-                string[] datosFila = new string[] { reco.solicitud.personaTramite.ToString(), reco.solicitud.tipoTramite.ToString(),
+                string[] datosFila = new string[] { reco.solicitud.fecha.ToString(),reco.solicitud.personaTramite.ToString(), reco.solicitud.tipoTramite.ToString(),
                                     reco.solicitud.tipoNacionalidad.ToString(), reco.solicitud.solicitante.tipoDocumento.ToString(),
                                     reco.solicitud.solicitante.numDocumento,reco.solicitud.solicitante.nombre, reco.solicitud.solicitante.edad.ToString()
                 };
