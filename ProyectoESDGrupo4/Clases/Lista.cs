@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -173,6 +174,35 @@ namespace ProyectoESDGrupo4.Clases
                 Console.WriteLine(reco.solicitud.solicitante.nombre);                
                 reco = reco.sig;
             }            
+        }
+        //Metodo para convertir a un datable para poder asignar como datasource a un Grid
+        public DataTable convertirATablaDatos()
+        {
+            DataTable tabla = new DataTable();
+            string[] encabezados = new string[] { "Persona Tramite","Tipo Tramite", "Tipo Nacionalidad", "Tipo Documento",
+                                "No Documento", "Nombre", "Edad" };
+            foreach(string encabezado in encabezados)
+            {
+                tabla.Columns.Add(encabezado);
+            }
+            //Recorrer la estructura y agregar filas al datatable
+            Nodo reco = raiz;
+            while (reco != null)
+            {
+                DataRow fila = tabla.NewRow();
+                string[] datosFila = new string[] { reco.solicitud.personaTramite.ToString(), reco.solicitud.tipoTramite.ToString(),
+                                    reco.solicitud.tipoNacionalidad.ToString(), reco.solicitud.solicitante.tipoDocumento.ToString(),
+                                    reco.solicitud.solicitante.numDocumento,reco.solicitud.solicitante.nombre, reco.solicitud.solicitante.edad.ToString()
+                };
+                for (int i = 0; i < datosFila.Length; i++)
+                {
+                    fila[i] = datosFila[i];
+                }
+                tabla.Rows.Add(fila);
+                //Console.WriteLine(reco.solicitud.solicitante.nombre);
+                reco = reco.sig;
+            }
+            return tabla;
         }
         #endregion
     }

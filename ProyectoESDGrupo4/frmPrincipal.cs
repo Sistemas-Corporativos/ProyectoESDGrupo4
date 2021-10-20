@@ -44,7 +44,10 @@ namespace ProyectoESDGrupo4
 
         private void verSolicitudesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            listaSolicitudes.imprimir();
+            //listaSolicitudes.imprimir();
+            frmSolicitudes frm = new frmSolicitudes(listaSolicitudes);
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }

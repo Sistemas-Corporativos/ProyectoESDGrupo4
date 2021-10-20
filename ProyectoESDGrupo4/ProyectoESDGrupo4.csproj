@@ -56,6 +56,12 @@
     <Compile Include="Forms\frmSolicitud.Designer.cs">
       <DependentUpon>frmSolicitud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmSolicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSolicitudes.Designer.cs">
+      <DependentUpon>frmSolicitudes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmSolicitud.resx">
       <DependentUpon>frmSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSolicitudes.resx">
+      <DependentUpon>frmSolicitudes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

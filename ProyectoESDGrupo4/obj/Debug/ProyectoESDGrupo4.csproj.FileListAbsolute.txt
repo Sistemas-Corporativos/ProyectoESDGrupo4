@@ -9,3 +9,4 @@ C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\Proy
 C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.csproj.CoreCompileInputs.cache
 C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.exe
 C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.pdb
+C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmSolicitudes.resources
