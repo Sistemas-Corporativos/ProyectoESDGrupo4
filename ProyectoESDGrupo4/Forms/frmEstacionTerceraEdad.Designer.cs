@@ -30,7 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSolicitudes = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.accionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liberarYAsignarSiguienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSolicitudes)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -54,6 +58,32 @@
             this.dgvSolicitudes.Size = new System.Drawing.Size(1099, 393);
             this.dgvSolicitudes.TabIndex = 3;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.accionesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1123, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // accionesToolStripMenuItem
+            // 
+            this.accionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.liberarYAsignarSiguienteToolStripMenuItem});
+            this.accionesToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.Actions_dialog_ok_apply_icon;
+            this.accionesToolStripMenuItem.Name = "accionesToolStripMenuItem";
+            this.accionesToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.accionesToolStripMenuItem.Text = "&Acciones";
+            // 
+            // liberarYAsignarSiguienteToolStripMenuItem
+            // 
+            this.liberarYAsignarSiguienteToolStripMenuItem.Name = "liberarYAsignarSiguienteToolStripMenuItem";
+            this.liberarYAsignarSiguienteToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.liberarYAsignarSiguienteToolStripMenuItem.Text = "Liberar y Asignar Siguiente";
+            this.liberarYAsignarSiguienteToolStripMenuItem.Click += new System.EventHandler(this.liberarYAsignarSiguienteToolStripMenuItem_Click);
+            // 
             // frmEstacionTerceraEdad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -61,12 +91,16 @@
             this.ClientSize = new System.Drawing.Size(1123, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvSolicitudes);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmEstacionTerceraEdad";
             this.Text = "Estacion Tercera Edad";
             this.Load += new System.EventHandler(this.frmEstacionTerceraEdad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSolicitudes)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,5 +110,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvSolicitudes;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem accionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem liberarYAsignarSiguienteToolStripMenuItem;
     }
 }

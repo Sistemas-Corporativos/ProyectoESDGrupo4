@@ -36,6 +36,11 @@ namespace ProyectoESDGrupo4.Forms
         {
             tablaDatos = listaSolicitudes.convertirATablaDatos();
             dgvSolicitudes.DataSource = tablaDatos;
+            //No ordenable
+            foreach (DataGridViewColumn dgvc in dgvSolicitudes.Columns)
+            {
+                dgvc.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
         }
         private void eliminarSolicitudSeleccionadaToolStripMenuItem_Click(object sender, EventArgs e)
         {

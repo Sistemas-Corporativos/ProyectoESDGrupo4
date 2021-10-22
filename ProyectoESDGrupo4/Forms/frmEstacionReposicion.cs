@@ -29,6 +29,32 @@ namespace ProyectoESDGrupo4.Forms
         {
             tablaDatos = estacionReposicion.convertirATablaDatos();
             dgvSolicitudes.DataSource = tablaDatos;
+            //No ordenable
+            foreach (DataGridViewColumn dgvc in dgvSolicitudes.Columns)
+            {
+                dgvc.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+        }
+
+        private void liberarYAsignarSiguienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Verificar que la lista no este vacia
+            if (!estacionReposicion.vacia())
+            {
+                //Eliminamos el primer elemento de la cola
+                estacionReposicion.borrar(1);
+                //Verificar si no quedo vacia luego de liberar  el primer elemento
+                if (!estacionReposicion.vacia())
+                {
+                    MessageBox.Show("Siguiente en la cola : " + estacionReposicion.extraer(1).solicitante.nombre);
+                }
+                else
+                {
+                    MessageBox.Show("No quedan mas Personas asignadas a la estación");
+                }
+                rellenar();
+            }
+            else { MessageBox.Show("No quedan mas Personas asignadas a la estación"); }
         }
     }
 }

@@ -85,9 +85,9 @@
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(168, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 21);
+            this.label1.Size = new System.Drawing.Size(208, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Estación 1";
+            this.label1.Text = "Estación Tercera Edad";
             // 
             // panel2
             // 
@@ -105,9 +105,9 @@
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(168, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 21);
+            this.label2.Size = new System.Drawing.Size(200, 21);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Estación 2";
+            this.label2.Text = "Estación Primera Vez";
             // 
             // btnSiguientePrimeraVez
             // 
@@ -135,9 +135,9 @@
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(168, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 21);
+            this.label3.Size = new System.Drawing.Size(187, 21);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Estación 3";
+            this.label3.Text = "Estación Reposición";
             // 
             // btnSiguienteReposicion
             // 

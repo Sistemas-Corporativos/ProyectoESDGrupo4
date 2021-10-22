@@ -141,5 +141,32 @@
   <ItemGroup>
     <None Include="Resources\Button-Refresh-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-dialog-ok-apply-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-Google-Drive-Forms-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_Ministerio_de_HaciendaSV.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

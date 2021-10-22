@@ -29,27 +29,29 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verSolicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cascadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verSolicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.terceraEdadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.primeraVezToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reposiciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ventanaToolStripMenuItem,
             this.solicitudesToolStripMenuItem,
             this.procesosToolStripMenuItem,
-            this.ventanaToolStripMenuItem,
             this.monitorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -57,38 +59,16 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // solicitudesToolStripMenuItem
+            // pictureBox1
             // 
-            this.solicitudesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaToolStripMenuItem,
-            this.verSolicitudesToolStripMenuItem});
-            this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.solicitudesToolStripMenuItem.Text = "&Solicitudes";
-            // 
-            // nuevaToolStripMenuItem
-            // 
-            this.nuevaToolStripMenuItem.Name = "nuevaToolStripMenuItem";
-            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.nuevaToolStripMenuItem.Text = "&Nueva";
-            this.nuevaToolStripMenuItem.Click += new System.EventHandler(this.nuevaToolStripMenuItem_Click);
-            // 
-            // verSolicitudesToolStripMenuItem
-            // 
-            this.verSolicitudesToolStripMenuItem.Name = "verSolicitudesToolStripMenuItem";
-            this.verSolicitudesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.verSolicitudesToolStripMenuItem.Text = "V&er Solicitudes";
-            this.verSolicitudesToolStripMenuItem.Click += new System.EventHandler(this.verSolicitudesToolStripMenuItem_Click);
-            // 
-            // procesosToolStripMenuItem
-            // 
-            this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.terceraEdadToolStripMenuItem,
-            this.primeraVezToolStripMenuItem,
-            this.reposiciónToolStripMenuItem});
-            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.procesosToolStripMenuItem.Text = "&Estaciones";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::ProyectoESDGrupo4.Properties.Resources.LOGO_Ministerio_de_HaciendaSV;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 426);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // ventanaToolStripMenuItem
             // 
@@ -96,8 +76,9 @@
             this.cascadaToolStripMenuItem,
             this.horizontalToolStripMenuItem,
             this.verticalToolStripMenuItem});
+            this.ventanaToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.Window_icon;
             this.ventanaToolStripMenuItem.Name = "ventanaToolStripMenuItem";
-            this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.ventanaToolStripMenuItem.Text = "&Ventana";
             // 
             // cascadaToolStripMenuItem
@@ -121,31 +102,67 @@
             this.verticalToolStripMenuItem.Text = "V&ertical";
             this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
             // 
+            // solicitudesToolStripMenuItem
+            // 
+            this.solicitudesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaToolStripMenuItem,
+            this.verSolicitudesToolStripMenuItem});
+            this.solicitudesToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.Apps_Google_Drive_Forms_icon;
+            this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
+            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.solicitudesToolStripMenuItem.Text = "&Solicitudes";
+            // 
+            // nuevaToolStripMenuItem
+            // 
+            this.nuevaToolStripMenuItem.Name = "nuevaToolStripMenuItem";
+            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.nuevaToolStripMenuItem.Text = "&Nueva";
+            this.nuevaToolStripMenuItem.Click += new System.EventHandler(this.nuevaToolStripMenuItem_Click);
+            // 
+            // verSolicitudesToolStripMenuItem
+            // 
+            this.verSolicitudesToolStripMenuItem.Name = "verSolicitudesToolStripMenuItem";
+            this.verSolicitudesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.verSolicitudesToolStripMenuItem.Text = "V&er Solicitudes";
+            this.verSolicitudesToolStripMenuItem.Click += new System.EventHandler(this.verSolicitudesToolStripMenuItem_Click);
+            // 
+            // procesosToolStripMenuItem
+            // 
+            this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.terceraEdadToolStripMenuItem,
+            this.primeraVezToolStripMenuItem,
+            this.reposiciónToolStripMenuItem});
+            this.procesosToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.PC_icon;
+            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.procesosToolStripMenuItem.Text = "&Estaciones";
+            // 
             // terceraEdadToolStripMenuItem
             // 
             this.terceraEdadToolStripMenuItem.Name = "terceraEdadToolStripMenuItem";
-            this.terceraEdadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.terceraEdadToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.terceraEdadToolStripMenuItem.Text = "&Tercera Edad";
             this.terceraEdadToolStripMenuItem.Click += new System.EventHandler(this.terceraEdadToolStripMenuItem_Click);
             // 
             // primeraVezToolStripMenuItem
             // 
             this.primeraVezToolStripMenuItem.Name = "primeraVezToolStripMenuItem";
-            this.primeraVezToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.primeraVezToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.primeraVezToolStripMenuItem.Text = "&Primera Vez";
             this.primeraVezToolStripMenuItem.Click += new System.EventHandler(this.primeraVezToolStripMenuItem_Click);
             // 
             // reposiciónToolStripMenuItem
             // 
             this.reposiciónToolStripMenuItem.Name = "reposiciónToolStripMenuItem";
-            this.reposiciónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reposiciónToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.reposiciónToolStripMenuItem.Text = "&Reposición";
             this.reposiciónToolStripMenuItem.Click += new System.EventHandler(this.reposiciónToolStripMenuItem_Click);
             // 
             // monitorToolStripMenuItem
             // 
+            this.monitorToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.Search_icon;
             this.monitorToolStripMenuItem.Name = "monitorToolStripMenuItem";
-            this.monitorToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.monitorToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.monitorToolStripMenuItem.Text = "&Monitor";
             this.monitorToolStripMenuItem.Click += new System.EventHandler(this.monitorToolStripMenuItem_Click);
             // 
@@ -154,6 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -162,6 +180,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,6 +201,7 @@
         private System.Windows.Forms.ToolStripMenuItem primeraVezToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reposiciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monitorToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

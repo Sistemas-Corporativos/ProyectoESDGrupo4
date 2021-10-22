@@ -57,11 +57,14 @@
             this.txtNumDocApoderado = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cbxTipoDocApoderado = new System.Windows.Forms.ComboBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.gbxInfo.SuspendLayout();
             this.gbxSolicitante.SuspendLayout();
             this.gbxApoderado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxInfo
@@ -72,7 +75,7 @@
             this.gbxInfo.Controls.Add(this.cbxTipoTramite);
             this.gbxInfo.Controls.Add(this.label1);
             this.gbxInfo.Controls.Add(this.cbxPersonaTramite);
-            this.gbxInfo.Location = new System.Drawing.Point(12, 12);
+            this.gbxInfo.Location = new System.Drawing.Point(12, 35);
             this.gbxInfo.Name = "gbxInfo";
             this.gbxInfo.Size = new System.Drawing.Size(281, 194);
             this.gbxInfo.TabIndex = 0;
@@ -155,7 +158,7 @@
             this.gbxSolicitante.Controls.Add(this.txtNumDocSolicitante);
             this.gbxSolicitante.Controls.Add(this.label4);
             this.gbxSolicitante.Controls.Add(this.cbxTipoDocSolicitante);
-            this.gbxSolicitante.Location = new System.Drawing.Point(12, 212);
+            this.gbxSolicitante.Location = new System.Drawing.Point(12, 235);
             this.gbxSolicitante.Name = "gbxSolicitante";
             this.gbxSolicitante.Size = new System.Drawing.Size(300, 310);
             this.gbxSolicitante.TabIndex = 1;
@@ -261,7 +264,7 @@
             this.gbxApoderado.Controls.Add(this.txtNumDocApoderado);
             this.gbxApoderado.Controls.Add(this.label13);
             this.gbxApoderado.Controls.Add(this.cbxTipoDocApoderado);
-            this.gbxApoderado.Location = new System.Drawing.Point(341, 212);
+            this.gbxApoderado.Location = new System.Drawing.Point(341, 235);
             this.gbxApoderado.Name = "gbxApoderado";
             this.gbxApoderado.Size = new System.Drawing.Size(297, 310);
             this.gbxApoderado.TabIndex = 2;
@@ -356,19 +359,11 @@
             this.cbxTipoDocApoderado.TabIndex = 16;
             this.cbxTipoDocApoderado.SelectedIndexChanged += new System.EventHandler(this.cbxTipoDocApoderado_SelectedIndexChanged);
             // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(12, 540);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 3;
-            this.btnGuardar.Text = "&Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(103, 540);
+            this.btnSalir.Image = global::ProyectoESDGrupo4.Properties.Resources.Error_icon;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.Location = new System.Drawing.Point(103, 563);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 4;
@@ -376,11 +371,45 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(268, 3);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(159, 24);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "Solicitud de NIT";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoESDGrupo4.Properties.Resources.Nit;
+            this.pictureBox1.Location = new System.Drawing.Point(302, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(336, 194);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = global::ProyectoESDGrupo4.Properties.Resources.Save_icon;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.Location = new System.Drawing.Point(12, 563);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 3;
+            this.btnGuardar.Text = "&Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // frmSolicitud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 589);
+            this.ClientSize = new System.Drawing.Size(677, 597);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.gbxApoderado);
@@ -395,7 +424,9 @@
             this.gbxSolicitante.PerformLayout();
             this.gbxApoderado.ResumeLayout(false);
             this.gbxApoderado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -432,5 +463,7 @@
         private System.Windows.Forms.ComboBox cbxTipoDocApoderado;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label14;
     }
 }
