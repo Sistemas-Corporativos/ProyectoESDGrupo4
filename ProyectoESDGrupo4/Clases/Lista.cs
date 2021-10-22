@@ -22,7 +22,7 @@ namespace ProyectoESDGrupo4.Clases
         }
         #region METODOS
         //Obtener la cantidad de elementos de la lista
-        private int cantidadElementos()
+        public int cantidadElementos()
         {
             int cant = 0;
             Nodo reco = raiz;

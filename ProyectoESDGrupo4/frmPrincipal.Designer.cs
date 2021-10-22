@@ -31,12 +31,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verSolicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cascadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verSolicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.terceraEdadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.primeraVezToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reposiciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +49,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.solicitudesToolStripMenuItem,
             this.procesosToolStripMenuItem,
-            this.ventanaToolStripMenuItem});
+            this.ventanaToolStripMenuItem,
+            this.monitorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -64,9 +69,26 @@
             // nuevaToolStripMenuItem
             // 
             this.nuevaToolStripMenuItem.Name = "nuevaToolStripMenuItem";
-            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.nuevaToolStripMenuItem.Text = "&Nueva";
             this.nuevaToolStripMenuItem.Click += new System.EventHandler(this.nuevaToolStripMenuItem_Click);
+            // 
+            // verSolicitudesToolStripMenuItem
+            // 
+            this.verSolicitudesToolStripMenuItem.Name = "verSolicitudesToolStripMenuItem";
+            this.verSolicitudesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.verSolicitudesToolStripMenuItem.Text = "V&er Solicitudes";
+            this.verSolicitudesToolStripMenuItem.Click += new System.EventHandler(this.verSolicitudesToolStripMenuItem_Click);
+            // 
+            // procesosToolStripMenuItem
+            // 
+            this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.terceraEdadToolStripMenuItem,
+            this.primeraVezToolStripMenuItem,
+            this.reposiciónToolStripMenuItem});
+            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.procesosToolStripMenuItem.Text = "&Estaciones";
             // 
             // ventanaToolStripMenuItem
             // 
@@ -81,36 +103,51 @@
             // cascadaToolStripMenuItem
             // 
             this.cascadaToolStripMenuItem.Name = "cascadaToolStripMenuItem";
-            this.cascadaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cascadaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.cascadaToolStripMenuItem.Text = "&Cascada";
             this.cascadaToolStripMenuItem.Click += new System.EventHandler(this.cascadaToolStripMenuItem_Click);
             // 
             // horizontalToolStripMenuItem
             // 
             this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
-            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.horizontalToolStripMenuItem.Text = "&Horizontal";
             this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
             // 
             // verticalToolStripMenuItem
             // 
             this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.verticalToolStripMenuItem.Text = "V&ertical";
             this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
             // 
-            // verSolicitudesToolStripMenuItem
+            // terceraEdadToolStripMenuItem
             // 
-            this.verSolicitudesToolStripMenuItem.Name = "verSolicitudesToolStripMenuItem";
-            this.verSolicitudesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.verSolicitudesToolStripMenuItem.Text = "V&er Solicitudes";
-            this.verSolicitudesToolStripMenuItem.Click += new System.EventHandler(this.verSolicitudesToolStripMenuItem_Click);
+            this.terceraEdadToolStripMenuItem.Name = "terceraEdadToolStripMenuItem";
+            this.terceraEdadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.terceraEdadToolStripMenuItem.Text = "&Tercera Edad";
+            this.terceraEdadToolStripMenuItem.Click += new System.EventHandler(this.terceraEdadToolStripMenuItem_Click);
             // 
-            // procesosToolStripMenuItem
+            // primeraVezToolStripMenuItem
             // 
-            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.procesosToolStripMenuItem.Text = "&Procesos";
+            this.primeraVezToolStripMenuItem.Name = "primeraVezToolStripMenuItem";
+            this.primeraVezToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.primeraVezToolStripMenuItem.Text = "&Primera Vez";
+            this.primeraVezToolStripMenuItem.Click += new System.EventHandler(this.primeraVezToolStripMenuItem_Click);
+            // 
+            // reposiciónToolStripMenuItem
+            // 
+            this.reposiciónToolStripMenuItem.Name = "reposiciónToolStripMenuItem";
+            this.reposiciónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reposiciónToolStripMenuItem.Text = "&Reposición";
+            this.reposiciónToolStripMenuItem.Click += new System.EventHandler(this.reposiciónToolStripMenuItem_Click);
+            // 
+            // monitorToolStripMenuItem
+            // 
+            this.monitorToolStripMenuItem.Name = "monitorToolStripMenuItem";
+            this.monitorToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.monitorToolStripMenuItem.Text = "&Monitor";
+            this.monitorToolStripMenuItem.Click += new System.EventHandler(this.monitorToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -141,6 +178,10 @@
         private System.Windows.Forms.ToolStripMenuItem verticalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verSolicitudesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procesosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem terceraEdadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem primeraVezToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reposiciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem monitorToolStripMenuItem;
     }
 }
 

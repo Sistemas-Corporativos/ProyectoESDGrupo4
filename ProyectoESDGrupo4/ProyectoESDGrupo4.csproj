@@ -50,6 +50,30 @@
     <Compile Include="Clases\Lista.cs" />
     <Compile Include="Clases\Persona.cs" />
     <Compile Include="Clases\Solicitud.cs" />
+    <Compile Include="Forms\frmEstacionPrimeraVez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEstacionPrimeraVez.Designer.cs">
+      <DependentUpon>frmEstacionPrimeraVez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEstacionReposicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEstacionReposicion.Designer.cs">
+      <DependentUpon>frmEstacionReposicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEstacionTerceraEdad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEstacionTerceraEdad.Designer.cs">
+      <DependentUpon>frmEstacionTerceraEdad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMonitor.Designer.cs">
+      <DependentUpon>frmMonitor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmSolicitud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +94,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmEstacionPrimeraVez.resx">
+      <DependentUpon>frmEstacionPrimeraVez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEstacionReposicion.resx">
+      <DependentUpon>frmEstacionReposicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEstacionTerceraEdad.resx">
+      <DependentUpon>frmEstacionTerceraEdad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMonitor.resx">
+      <DependentUpon>frmMonitor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSolicitud.resx">
       <DependentUpon>frmSolicitud.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +123,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +138,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Button-Refresh-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
