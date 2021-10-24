@@ -46,6 +46,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ventanaToolStripMenuItem,
             this.solicitudesToolStripMenuItem,
@@ -53,7 +54,8 @@
             this.monitorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1200, 35);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,27 +67,28 @@
             this.verticalToolStripMenuItem});
             this.ventanaToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.Window_icon;
             this.ventanaToolStripMenuItem.Name = "ventanaToolStripMenuItem";
-            this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(111, 29);
             this.ventanaToolStripMenuItem.Text = "&Ventana";
+            this.ventanaToolStripMenuItem.Visible = false;
             // 
             // cascadaToolStripMenuItem
             // 
             this.cascadaToolStripMenuItem.Name = "cascadaToolStripMenuItem";
-            this.cascadaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.cascadaToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
             this.cascadaToolStripMenuItem.Text = "&Cascada";
             this.cascadaToolStripMenuItem.Click += new System.EventHandler(this.cascadaToolStripMenuItem_Click);
             // 
             // horizontalToolStripMenuItem
             // 
             this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
-            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
             this.horizontalToolStripMenuItem.Text = "&Horizontal";
             this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
             // 
             // verticalToolStripMenuItem
             // 
             this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
             this.verticalToolStripMenuItem.Text = "V&ertical";
             this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
             // 
@@ -96,20 +99,21 @@
             this.verSolicitudesToolStripMenuItem});
             this.solicitudesToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.Apps_Google_Drive_Forms_icon;
             this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(133, 29);
             this.solicitudesToolStripMenuItem.Text = "&Solicitudes";
+            this.solicitudesToolStripMenuItem.Click += new System.EventHandler(this.solicitudesToolStripMenuItem_Click);
             // 
             // nuevaToolStripMenuItem
             // 
             this.nuevaToolStripMenuItem.Name = "nuevaToolStripMenuItem";
-            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
             this.nuevaToolStripMenuItem.Text = "&Nueva";
             this.nuevaToolStripMenuItem.Click += new System.EventHandler(this.nuevaToolStripMenuItem_Click);
             // 
             // verSolicitudesToolStripMenuItem
             // 
             this.verSolicitudesToolStripMenuItem.Name = "verSolicitudesToolStripMenuItem";
-            this.verSolicitudesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.verSolicitudesToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
             this.verSolicitudesToolStripMenuItem.Text = "V&er Solicitudes";
             this.verSolicitudesToolStripMenuItem.Click += new System.EventHandler(this.verSolicitudesToolStripMenuItem_Click);
             // 
@@ -121,27 +125,27 @@
             this.reposiciónToolStripMenuItem});
             this.procesosToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.PC_icon;
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(130, 29);
             this.procesosToolStripMenuItem.Text = "&Estaciones";
             // 
             // terceraEdadToolStripMenuItem
             // 
             this.terceraEdadToolStripMenuItem.Name = "terceraEdadToolStripMenuItem";
-            this.terceraEdadToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.terceraEdadToolStripMenuItem.Size = new System.Drawing.Size(195, 30);
             this.terceraEdadToolStripMenuItem.Text = "&Tercera Edad";
             this.terceraEdadToolStripMenuItem.Click += new System.EventHandler(this.terceraEdadToolStripMenuItem_Click);
             // 
             // primeraVezToolStripMenuItem
             // 
             this.primeraVezToolStripMenuItem.Name = "primeraVezToolStripMenuItem";
-            this.primeraVezToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.primeraVezToolStripMenuItem.Size = new System.Drawing.Size(195, 30);
             this.primeraVezToolStripMenuItem.Text = "&Primera Vez";
             this.primeraVezToolStripMenuItem.Click += new System.EventHandler(this.primeraVezToolStripMenuItem_Click);
             // 
             // reposiciónToolStripMenuItem
             // 
             this.reposiciónToolStripMenuItem.Name = "reposiciónToolStripMenuItem";
-            this.reposiciónToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.reposiciónToolStripMenuItem.Size = new System.Drawing.Size(195, 30);
             this.reposiciónToolStripMenuItem.Text = "&Reposición";
             this.reposiciónToolStripMenuItem.Click += new System.EventHandler(this.reposiciónToolStripMenuItem_Click);
             // 
@@ -149,25 +153,27 @@
             // 
             this.monitorToolStripMenuItem.Image = global::ProyectoESDGrupo4.Properties.Resources.Search_icon;
             this.monitorToolStripMenuItem.Name = "monitorToolStripMenuItem";
-            this.monitorToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
+            this.monitorToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.monitorToolStripMenuItem.Text = "&Monitor";
             this.monitorToolStripMenuItem.Click += new System.EventHandler(this.monitorToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::ProyectoESDGrupo4.Properties.Resources.LOGO_Ministerio_de_HaciendaSV;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmPrincipal";
             this.Text = "Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

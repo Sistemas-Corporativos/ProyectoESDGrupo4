@@ -20,6 +20,7 @@ namespace ProyectoESDGrupo4.Forms
         private TipoNacionalidad tipoNacionalidad;
         private TipoDocumento tipoDocSolicitante;
         private TipoDocumento tipoDocApoderado;
+        private string errores = "";
 
         public frmSolicitud(Lista lista) // Pasamos por el constructor la lista con la que trabajaremos y agregaremos la solicitud
         {            
@@ -68,39 +69,121 @@ namespace ProyectoESDGrupo4.Forms
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            Persona solicitante = new Persona();
-            Persona apoderado = new Persona();
-            //Crear el solicitante;
-            solicitante.tipoDocumento = tipoDocSolicitante;
-            solicitante.numDocumento = txtNumDocSolicitante.Text;
-            solicitante.nombre = txtNomSolicitante.Text;
-            solicitante.edad = int.Parse(txtEdadSolicitante.Text);
-            solicitante.direccion = txtDireccionSolicitante.Text;
+            //Validamos los datos
+            if (!validarInformacion())
+            {
+                Persona solicitante = new Persona();
+                Persona apoderado = new Persona();
+                //Crear el solicitante;
+                solicitante.tipoDocumento = tipoDocSolicitante;
+                solicitante.numDocumento = txtNumDocSolicitante.Text;
+                solicitante.nombre = txtNomSolicitante.Text;
+                solicitante.edad = int.Parse(txtEdadSolicitante.Text);
+                solicitante.direccion = txtDireccionSolicitante.Text;
 
-            //Crear el apoderado si aplica
-            if(personaTramite != PersonaTramite.Personal)
-            {                
-                solicitante.tipoDocumento = tipoDocApoderado;
-                solicitante.numDocumento = txtNumDocApoderado.Text;
-                solicitante.nombre = txtNombreApoderado.Text;
-                solicitante.edad = int.Parse(txtEdadApoderado.Text);
-                solicitante.direccion = txtDireccionApoderado.Text;
+                //Crear el apoderado si aplica
+                if (personaTramite != PersonaTramite.Personal)
+                {
+                    solicitante.tipoDocumento = tipoDocApoderado;
+                    solicitante.numDocumento = txtNumDocApoderado.Text;
+                    solicitante.nombre = txtNombreApoderado.Text;
+                    solicitante.edad = int.Parse(txtEdadApoderado.Text);
+                    solicitante.direccion = txtDireccionApoderado.Text;
+                }
+                //Creamos la solicitud
+                Solicitud solicitud = new Solicitud();
+                solicitud.fecha = DateTime.Now;
+                solicitud.personaTramite = personaTramite;
+                solicitud.tipoTramite = tipoTramite;
+                solicitud.tipoNacionalidad = tipoNacionalidad;
+                solicitud.solicitante = solicitante;
+                if (personaTramite != PersonaTramite.Personal)
+                {
+                    solicitud.apoderado = apoderado;
+                }
+                //Agregar a la lista de solicitudes
+                listaSolicitudes.insertar(1, solicitud);
+                MessageBox.Show("Solicitud agregada");
+                limpiar();
             }
-            //Creamos la solicitud
-            Solicitud solicitud = new Solicitud();
-            solicitud.fecha = DateTime.Now;
-            solicitud.personaTramite = personaTramite;
-            solicitud.tipoTramite = tipoTramite;
-            solicitud.tipoNacionalidad = tipoNacionalidad;
-            solicitud.solicitante = solicitante;
+            else
+            {
+                MessageBox.Show(errores);
+            }            
+        }
+        private bool validarInformacion()
+        {
+            bool flag = false;
+            errores = "";
+            if(cbxPersonaTramite.SelectedIndex == -1)
+            {
+                flag = true;
+                errores += "Persona del tramite obligatoria \n";
+            }
+            if (cbxTipoTramite.SelectedIndex == -1)
+            {
+                flag = true;
+                errores += "Persona del tramite obligatoria \n";
+            }
+            if (cbxTipoSolicitante.SelectedIndex == -1)
+            {
+                flag = true;
+                errores += "Tipo de Solicitante obligatorio \n";
+            }
+            if (cbxTipoDocSolicitante.SelectedIndex == -1)
+            {
+                flag = true;
+                errores += "Tipo de Documnto Solicitante obligatorio \n";
+            }
+            if (txtNumDocSolicitante.Text == "")
+            {
+                flag = true;
+                errores += "Numero de Documento Solicitante obligatorio \n";
+            }
+            if (txtNomSolicitante.Text == "")
+            {
+                flag = true;
+                errores += "Nombre Solicitante obligatorio \n";
+            }
+            if (txtEdadSolicitante.Text == "")
+            {
+                flag = true;
+                errores += "Edad Solicitante obligatorio \n";
+            }
+            if (txtDireccionSolicitante.Text == "")
+            {
+                flag = true;
+                errores += "Direccion Solicitante obligatorio \n";
+            }
             if(personaTramite != PersonaTramite.Personal)
             {
-                solicitud.apoderado = apoderado;
+                if (cbxTipoDocApoderado.SelectedIndex == -1)
+                {
+                    flag = true;
+                    errores += "Tipo de docuemnto Apoderado obligatorio \n";
+                }
+                if (txtNumDocApoderado.Text == "")
+                {
+                    flag = true;
+                    errores += "Numero de Documento Apoderado obligatorio \n";
+                }
+                if (txtNombreApoderado.Text == "")
+                {
+                    flag = true;
+                    errores += "Nombre Apoderado obligatorio \n";
+                }
+                if (txtEdadApoderado.Text == "")
+                {
+                    flag = true;
+                    errores += "Edad Apoderado obligatorio \n";
+                }
+                if (txtDireccionApoderado.Text == "")
+                {
+                    flag = true;
+                    errores += "Direccion Apoderado obligatorio \n";
+                }
             }
-            //Agregar a la lista de solicitudes
-            listaSolicitudes.insertar(1, solicitud);
-            MessageBox.Show("Solicitud agregada");
-            limpiar();
+            return flag;
         }
         private void limpiar()
         {

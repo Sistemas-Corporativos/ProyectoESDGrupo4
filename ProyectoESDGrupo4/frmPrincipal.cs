@@ -25,6 +25,7 @@ namespace ProyectoESDGrupo4
 
         private void nuevaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            cerrarFormulariosHijos();
             frmSolicitud frm = new frmSolicitud(listaSolicitudes);
             frm.MdiParent = this;
             frm.Show();
@@ -47,6 +48,7 @@ namespace ProyectoESDGrupo4
 
         private void verSolicitudesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            cerrarFormulariosHijos();
             //Pasamos las listas con las que vamos a trabajar en el administrador de solicitudes;
             frmSolicitudes frm = new frmSolicitudes(listaSolicitudes,estacionPrimeraVez,estacionReposicion,estacionTerceraEdad);
             frm.MdiParent = this;
@@ -55,6 +57,7 @@ namespace ProyectoESDGrupo4
 
         private void terceraEdadToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            cerrarFormulariosHijos();
             frmEstacionTerceraEdad frm = new frmEstacionTerceraEdad(estacionTerceraEdad);
             frm.MdiParent = this;
             frm.Show();
@@ -62,6 +65,7 @@ namespace ProyectoESDGrupo4
 
         private void primeraVezToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            cerrarFormulariosHijos();
             frmEstacionPrimeraVez frm = new frmEstacionPrimeraVez(estacionPrimeraVez);
             frm.MdiParent = this;
             frm.Show();
@@ -69,6 +73,7 @@ namespace ProyectoESDGrupo4
 
         private void reposiciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            cerrarFormulariosHijos();
             frmEstacionReposicion frm = new frmEstacionReposicion(estacionReposicion);
             frm.MdiParent = this;
             frm.Show();
@@ -76,9 +81,25 @@ namespace ProyectoESDGrupo4
 
         private void monitorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            cerrarFormulariosHijos();
             frmMonitor frm = new frmMonitor(estacionPrimeraVez,estacionReposicion,estacionTerceraEdad);
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void solicitudesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void cerrarFormulariosHijos()
+        {
+            for (int i= 0;i < MdiChildren.Count(); i++){
+                MdiChildren[i].Close();
+            }
+        }
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

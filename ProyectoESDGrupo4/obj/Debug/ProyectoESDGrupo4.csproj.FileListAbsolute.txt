@@ -14,3 +14,19 @@ C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\Proy
 C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmEstacionPrimeraVez.resources
 C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmEstacionReposicion.resources
 C:\Users\Desarrollo\Documents\Visual Studio 2017\Projects\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmMonitor.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\bin\Debug\ProyectoESDGrupo4.exe.config
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\bin\Debug\ProyectoESDGrupo4.exe
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\bin\Debug\ProyectoESDGrupo4.pdb
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.csprojAssemblyReference.cache
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmEstacionPrimeraVez.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmEstacionReposicion.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmEstacionTerceraEdad.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmMonitor.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmSolicitud.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Forms.frmSolicitudes.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.frmPrincipal.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.Properties.Resources.resources
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.csproj.GenerateResource.cache
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.csproj.CoreCompileInputs.cache
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.exe
+G:\Proyectos\C#\ProyectoESDGrupo4\ProyectoESDGrupo4\obj\Debug\ProyectoESDGrupo4.pdb
